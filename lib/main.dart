@@ -22,7 +22,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   //First picture exists. Second is 404
-  List<String> sampleData = ["https://static-news.moneycontrol.com/static-mcnews/2018/08/Germany.jpg", "https://safetymanagementgroup.com/wp-content/uploads/2017/07/Oopsbutton1111.jpg"];
+  List<String> sampleData = ["https://static-news.moneycontrol.com/static-mcnews/2018/08/Germany.jpg", "https://google.nl/404.jpg"];
 
   void removeFirst() {
     sampleData.removeAt(0);
