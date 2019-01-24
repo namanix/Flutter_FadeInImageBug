@@ -22,7 +22,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   //First picture exists. Second is 404
-  List<String> sampleData = ["https://images.pexels.com/photos/17679/pexels-photo.jpg?auto=compress", "https://images.pexels.com/photos/17679/error.jpg"];
+  List<String> sampleData = ["https://static-news.moneycontrol.com/static-mcnews/2018/08/Germany.jpg", "https://safetymanagementgroup.com/wp-content/uploads/2017/07/Oopsbutton1111.jpg"];
 
   void removeFirst() {
     sampleData.removeAt(0);
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 itemBuilder: (BuildContext context, int index) {
                   return new ListTile(
                     title: new Text(sampleData[index]),
-                    leading: new FadeInImage.assetNetwork(placeholder: 'assets/FallBackUsersImage.jpg', image: sampleData[index]),
+                    leading: new FadeInImage.assetNetwork(placeholder: 'assets/FallBackUsersImage.jpg', image: sampleData[index], width: 50.0,),
                   );
                 }
             ),
